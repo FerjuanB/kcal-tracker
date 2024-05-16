@@ -7,11 +7,13 @@ export type ActivityActions={
 }
 
 type ActivityState={
-    activities:Activity[]
+    activities:Activity[],
+    activeId: string
 }
 
 export const initialState:ActivityState ={
-activities:[]
+activities:[],
+activeId: ''
 }
 
 export const activityReducer = (
